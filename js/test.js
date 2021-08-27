@@ -124,20 +124,31 @@
 // };
 
 // console.log(getCommonElements([1, 2, 3], [2, 4]));
+// ---------------------------------------------------------
 
-function changeEven(numbers, value) {
-  // Пиши код ниже этой строки
-  const newArray = [];
+// function changeEven(numbers, value) {
+//   // Пиши код ниже этой строки
 
-  numbers.forEach(number => {
-    if (number % 2 === 0) {
-      newArray.push(Number(number + value));
-      continue
-    }
-    newArray.push(number);
-  });
+//   const newArray = [];
 
-  // Пиши код выше этой строки
-}
+//   numbers.forEach(number => {
+//     if (number % 2 === 0) {
+//       newArray.push(number + value);
+//     } else {
+//       newArray.push(number);
+//     }
+//   });
+//   return newArray;
 
-console.log(changeEven([1, 2, 3, 4, 5], 10));
+//   // Пиши код выше этой строки
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10));
+
+// ----------------------------------------------------------
+
+// const planets = ['Земля', 'Марс', 'Венера', 'Юпитер'];
+// // Пиши код ниже этой строки
+// const planetsLengths = planets.map((planet) => planet.length);
+
+// console.log(planetsLengths);
