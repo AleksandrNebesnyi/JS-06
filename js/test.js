@@ -430,3 +430,167 @@
 // };
 
 // console.log(getUsersWithFriend);
+
+// ---------------------------------------------------------
+
+// exercise 21
+
+// // Пиши код ниже этой строки
+// const getFriends = (users) => {
+//   return users.flatMap((user) =>user.friends).filter((friend, index,allUsers) => allUsers.indexOf(friend) ===index);
+// };
+// // Пиши код выше этой строки
+
+// ----------------------------------------------------------------
+// exercise 22
+
+// // Пиши код ниже этой строки
+// const getActiveUsers = (users) => {
+//    return users.filter (({isActive}) => isActive);
+// };
+// // Пиши код выше этой строки
+
+// ----------------------------------------------------------------------
+
+// exercise 23
+
+// // Пиши код ниже этой строки
+// const getInactiveUsers = (users) => {
+//   return users.filter (({isActive}) => !isActive)
+// };
+// // Пиши код выше этой строки
+
+// -----------------------------------------------------------------------
+// exercise 24
+
+// const books = [
+//   { title: 'Последнее королевство', author: 'Бернард Корнуэлл', rating: 8.38 },
+//   { title: 'На берегу спокойных вод', author: 'Роберт Шекли', rating: 8.51 },
+//   { title: 'Сон смешного человека', author: 'Федор Достоевский', rating: 7.75 },
+//   { title: 'Красна как кровь', author: 'Ли Танит', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'Сон смешного человека';
+// const AUTHOR = 'Роберт Шекли';
+// // Пиши код ниже этой строки
+
+// const bookWithTitle = books.find(book => book.title === BOOK_TITLE);
+// const bookByAuthor = books.find(book => book.author === AUTHOR);
+
+// -------------------------------------------------------------------------
+// exercise 25
+
+// // Пиши код ниже этой строки
+// const getUserWithEmail = (users, email) => {
+//   return users.find((user) => user.email === email)
+// };
+// // Пиши код выше этой строки
+
+// --------------------------------------------------------------------
+
+// exercise 26
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const eachElementInFirstIsEven = firstArray.every(element => element % 2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every(element => element % 2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every(
+//   element => element % 2 === 0,
+// );
+// const eachElementInSecondIsOdd = secondArray.every(
+//   element => element % 2 !== 0,
+// );
+
+// const eachElementInThirdIsEven = thirdArray.every(element => element % 2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every(element => element % 2 !== 0);
+
+// ---------------------------------------------------------------
+// exercise 27
+
+// // Пиши код ниже этой строки
+// const isEveryUserActive = (users) => {
+//   return users.every(({isActive}) => isActive )
+// };
+// // Пиши код выше этой строки
+
+// -------------------------------------------------------------------
+// exercise 28
+
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+// // Пиши код ниже этой строки
+
+// const anyElementInFirstIsEven = firstArray.some(element => element % 2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some(element => element % 2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some(element => element % 2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some(element => element % 2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some(element => element % 2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some(element => element % 2 !== 0);
+
+// ------------------------------------------------------------------
+
+// exercise 29
+
+// // Пиши код ниже этой строки
+// const isAnyUserActive = users => {
+//    return users.some(({isActive}) => isActive)
+// };
+// // Пиши код выше этой строки
+
+// ---------------------------------------------------------------------
+
+// exercise 30
+
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244,
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Пиши код ниже этой строки
+
+// const totalPlayTime = playtimes.reduce((acc, element) => acc + element, 0);
+
+// // Пиши код выше этой строки
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+// -------------------------------------------------------
+// exercise 31
+
+// const players = [
+//   { name: 'Манго', playtime: 1270, gamesPlayed: 4 },
+//   { name: 'Поли', playtime: 469, gamesPlayed: 2 },
+//   { name: 'Аякс', playtime: 690, gamesPlayed: 3 },
+//   { name: 'Киви', playtime: 241, gamesPlayed: 1 },
+// ];
+// // Пиши код ниже этой строки
+
+// const totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return total + player.playtime / player.gamesPlayed;
+// }, 0);
+// console.log(totalAveragePlaytimePerGame);
+// ------------------------------------------------------------------
+// exercise 32
+
+// // Пиши код ниже этой строки
+// const calculateTotalBalance = users => {
+//   return users.reduce((total, user) => (total + user.balance) ,0)
+// };
+// // Пиши код выше этой строки
+
+// ------------------------------------------------------------------------
+
+// exercise 33
+
+// // Пиши код ниже этой строки
+// const getTotalFriendCount = users => {
+//    return users.reduce((acc, user) => acc + user.friends.length ,0)
+// };
+// // Пиши код выше этой строки
